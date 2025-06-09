@@ -1,5 +1,7 @@
+import AppRoutes from "./routes";
+
 const App = () => {
-  return <div className=" text-red-300">Hello World</div>;
+  return <AppRoutes />;
 };
 
 export default App;
