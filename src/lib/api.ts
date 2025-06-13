@@ -1,9 +1,19 @@
+import type { CurrentUserResponseType, registerType } from "../types/api.type";
 import API from "./axios-client";
-import { CurrentUserResponseType } from "@/types/api.type";
 
-export const loginMutationFn = async () => {};
+export const loginMutationFn = async ({
+  email,
+  password,
+}: {
+  email: string;
+  password: string;
+}) => {
+  console.log(email, password);
+};
 
-export const registerMutationFn = async () => {};
+export const registerMutationFn = async (data: registerType) => {
+  await API.post("/auth/register", data);
+};
 
 export const logoutMutationFn = async () => {};
 
