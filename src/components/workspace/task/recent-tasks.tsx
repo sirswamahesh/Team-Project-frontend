@@ -8,7 +8,7 @@ import {
   getAvatarFallbackText,
   transformStatusEnum,
 } from "@/lib/helper";
-import { TaskType } from "@/types/api.type";
+import { TaskType } from "@/types/api.types";
 import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { Loader } from "lucide-react";
