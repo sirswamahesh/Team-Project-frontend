@@ -19,12 +19,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "../../ui/textarea";
 import EmojiPickerComponent from "@/components/emoji-picker";
-import { ProjectType } from "@/types/api.type";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import useWorkspaceId from "@/hooks/use-workspace-id";
 import { editProjectMutationFn } from "@/lib/api";
 import { toast } from "@/hooks/use-toast";
 import { Loader } from "lucide-react";
+import { ProjectType } from "@/types/api.types";
 
 export default function EditProjectForm(props: {
   project?: ProjectType;
@@ -89,7 +89,7 @@ export default function EditProjectForm(props: {
         toast({
           title: "Success",
           description: data.message,
-          variant: "success",
+          variant: "default",
         });
 
         setTimeout(() => onClose(), 100);
