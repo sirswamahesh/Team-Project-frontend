@@ -17,8 +17,8 @@ import {
   getAvatarFallbackText,
 } from "@/lib/helper";
 import { priorities, statuses } from "./data";
-import { TaskType } from "@/types/api.type";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { TaskType } from "@/types/api.types";
 
 export const getColumns = (projectId?: string): ColumnDef<TaskType>[] => {
   const columns: ColumnDef<TaskType>[] = [
